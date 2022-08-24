@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#volcano-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -999;
+}
+
+.word {
+    width: 90%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.word span {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 12vw;
+    font-weight: 700;
+    color: rgba(235, 118, 10, 0.829);
+    letter-spacing: 1vw;
+    text-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transform: translateY(-100vh);
+    animation: fall 3.5s forwards;
+}
+
+@keyframes fall {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.word span:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.word span:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.word span:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.word span:nth-child(5) {
+    animation-delay: 2s;
+}
+
+.word span:nth-child(6) {
+    animation-delay: 2.5s;
+}
+
+.word span:nth-child(7) {
+    animation-delay: 3s;
+}
+
+.word span:nth-child(8) {
+    animation-delay: 3.5s;
+}
